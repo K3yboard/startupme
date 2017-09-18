@@ -28,6 +28,8 @@ mark, span, br {
   font-weight: normal;
   vertical-align: baseline;
   background: transparent;
+  outline: none;
+  border: none;
 }
 
 :after,
