@@ -84,11 +84,39 @@ nav a:hover {
   color: #fed136;
 }
 
+main section:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+main section {
+  padding: 40px 0;
+}
+
 h2 + button {
   margin-top: 40px;
 }
 
 nav a + a {
+  margin-left: 60px;
+}
+
+figure {
+  display: inline-block;
+}
+
+figure img {
+  margin: 10px auto;
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+.segmentos figure {
+  width: 120px;
+}
+
+.segmentos figure + figure {
   margin-left: 60px;
 }
 
