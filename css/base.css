@@ -21,21 +21,19 @@ button {
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #8e8e8e;
   cursor: pointer;
-  -webkit-transition: all ease-in-out 300ms;
-  transition: all ease-in-out 300ms;
+
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
 }
 
 button:hover {
-  background-color: #ffeb3b;
+  background-color: #E88B1E;
 }
 button:active {
+  background-color: rgba(142, 254, 54, 0.8);
+
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
-  background-color: rgba(142, 254, 54, 0.8);
-}
-
-button:focus {
-  background: linear-gradient();
 }
 
 h1 {
@@ -52,7 +50,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #000;
 }
@@ -85,7 +83,8 @@ nav a:hover {
 }
 
 main section:nth-child(even) {
-  background-color: #f5f5f5;
+  background: -webkit-linear-gradient(360deg, rgba(83, 107, 119, 0.41), #f5f5f5, rgba(129, 197, 230, 0.22));
+  background: linear-gradient(360deg, rgba(83, 107, 119, 0.41), #f5f5f5, rgba(129, 197, 230, 0.22));
 }
 
 main section {
@@ -94,6 +93,16 @@ main section {
 
 h2 + button {
   margin-top: 40px;
+}
+
+h2 + p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+h3 {
+  margin-bottom: 40px;
 }
 
 nav a + a {
@@ -110,14 +119,62 @@ figure img {
 
 figcaption {
   font-weight: bold;
+  font-size: 16px;
+}
+
+.segmentos {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  position: relative;
+  margin-bottom: 20px;
+
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
 .segmentos figure {
-  width: 120px;
+  flex-grow: 1;
+  width: 140px;
+  height: 140px;
+}
+
+.segmentos img,
+.segmentos figcaption {
+  -webkit-transition: all ease-out 200ms;
+  transition: all ease-out 200ms;
+}
+
+.segmentos figure:hover > figcaption {
+  color: #fed136;
+
+  -webkit-transform: scale(1.2) translateY(30%);
+  transform: scale(1.2) translateY(30%);
+}
+
+.segmentos figure:hover > img {
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.26);
+
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .segmentos figure + figure {
-  margin-left: 60px;
+  margin-left: 20px;
+}
+
+.segmentos ~ p + p {
+  margin-bottom: 20px;
+}
+
+.segmentos ~ button {
+  padding: 10px 30px;
+  font-size: 14px;
 }
 
 .container {
@@ -126,7 +183,12 @@ figcaption {
   max-width: 940px;
   margin: 0 auto;
   text-align: center;
+  font-size: 20px;
+}
 
+.container:after,
+.segmentos:after,
+.boas-vindas:after {
   content: '';
   display: table;
   clear: both;
@@ -138,7 +200,7 @@ figcaption {
 
 .boas-vindas {
   clear: both;
-  margin-top: 150px;
+  padding-top: 70px;
 }
 
 .boas-vindas h2 {
@@ -154,5 +216,6 @@ figcaption {
 }
 
 .boas-vindas button {
-  padding: 20px 40px;
+  padding: 15px 40px;
+  font-size: 22px;
 }
