@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #777777;
 }
 
@@ -19,11 +19,28 @@ button {
   border-radius: 4px;
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  text-shadow: 1px 1px 2px #8e8e8e;
+}
+
+button:hover {
+  background-color: #ffeb3b;
+}
+button:active {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+  background-color: rgba(142, 254, 54, 0.8);
+}
+
+button:focus {
+  background: linear-gradient();
 }
 
 h1 {
   text-indent: -9999px;
   overflow: hidden;
+  float: left;
 }
 
 h2 {
@@ -47,26 +64,62 @@ header {
   background-position: center;
 }
 
+nav {
+  float: right;
+  margin-top: 30px;
+}
+
+nav a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+
+nav a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #fed136;
+}
+
+h2 + button {
+  margin-top: 40px;
+}
+
+nav a + a {
+  margin-left: 60px;
+}
+
 .container {
   position: relative;
   width: 80%;
   max-width: 940px;
   margin: 0 auto;
   text-align: center;
+
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .logo {
   width: 180px;
 }
 
+.boas-vindas {
+  clear: both;
+  margin-top: 150px;
+}
+
 .boas-vindas h2 {
-  font-size: 50px;
+  font-size: 65px;
   color: #fff;
 }
 
 .boas-vindas span {
   display: block;
-  font-size: 25px;
+  font-size: 30px;
   font-style: italic;
   text-transform: none;
 }
