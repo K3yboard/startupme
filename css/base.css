@@ -19,9 +19,10 @@ button {
   border-radius: 4px;
   color: #fff;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px #8e8e8e;
+  cursor: pointer;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
-  text-shadow: 1px 1px 2px #8e8e8e;
 }
 
 button:hover {
