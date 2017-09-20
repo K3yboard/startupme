@@ -135,7 +135,8 @@ figcaption {
 .segmentos:after,
 .boas-vindas:after,
 .equipe:after,
-.recursos:after {
+.recursos:after,
+.plataformas:after {
   content: '';
   display: table;
   clear: both;
@@ -282,10 +283,21 @@ figcaption {
 .recursos {
   float: left;
   max-width: 550px;
+}
+
+.plataformas {
+  float: right;
+  max-width: 500px;
+  margin-top: 70px;
+}
+
+.recursos,
+.plataformas {
   text-align: left;
 }
 
-.recursos img {
+.recursos + img,
+.plataformas + img {
   display: inline-block;
   margin: 20px auto;
 }
