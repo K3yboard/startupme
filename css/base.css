@@ -122,6 +122,51 @@ figcaption {
   font-size: 16px;
 }
 
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container:after,
+.segmentos:after,
+.boas-vindas:after,
+.equipe:after,
+.recursos:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  width: 180px;
+}
+
+.boas-vindas {
+  clear: both;
+  padding-top: 70px;
+}
+
+.boas-vindas h2 {
+  font-size: 65px;
+  color: #fff;
+}
+
+.boas-vindas span {
+  display: block;
+  font-size: 30px;
+  font-style: italic;
+  text-transform: none;
+}
+
+.boas-vindas button {
+  padding: 15px 40px;
+  font-size: 22px;
+}
+
 .container-flex {
   display: -webkit-box;
   display: -moz-box;
@@ -234,46 +279,13 @@ figcaption {
   transform: translateY(20%);
 }
 
-.container {
-  position: relative;
-  width: 80%;
-  max-width: 940px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 20px;
+.recursos {
+  float: left;
+  max-width: 550px;
+  text-align: left;
 }
 
-.container:after,
-.segmentos:after,
-.boas-vindas:after,
-.equipe:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  width: 180px;
-}
-
-.boas-vindas {
-  clear: both;
-  padding-top: 70px;
-}
-
-.boas-vindas h2 {
-  font-size: 65px;
-  color: #fff;
-}
-
-.boas-vindas span {
-  display: block;
-  font-size: 30px;
-  font-style: italic;
-  text-transform: none;
-}
-
-.boas-vindas button {
-  padding: 15px 40px;
-  font-size: 22px;
+.recursos img {
+  display: inline-block;
+  margin: 20px auto;
 }
