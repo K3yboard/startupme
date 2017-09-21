@@ -277,7 +277,7 @@ figcaption {
   border-radius: 2px;
 
   -webkit-filter: saturate(1.2) drop-shadow(5px 5px 10px rgba(23, 110, 148, 0.7));
-  filter: saturate(1.2) drop-shadow(5px 5px 10px rgba(23, 110, 148, 0.7));
+  filter: saturate(2) drop-shadow(5px 5px 10px rgba(23, 110, 148, 0.7));
 }
 
 .equipe figure:hover > figcaption {
