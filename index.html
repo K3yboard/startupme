@@ -120,35 +120,63 @@
           <img src="images/smartphones.png" alt="Smartphones" width="360px">
         </div>
       </section>
-      <section id="contato">
-        <div class="container">
+    </main>
+    <footer id="contato">
+      <div class="container">
           <h2>Entre em contato conosco</h2>
           <p>Preencha o formulário abaixo e nos envie um orçamento, utilize também para nos enviar dúvidas e/ ou sugestões.</p>
+      </div>
+      <div class="fale-conosco">
+        <div class="container-flex container">
           <div>
             <form action="#" method="post">
               <fieldset>
                 <legend>Campos com * são de preenchimento obrigatório.</legend>
-                <label for="name">Nome*</label>
-                <input id="name" type="text">
-                <label for="email">E-mail*</label>
-                <input id="email" type="email">
-                <label for="tel">Telefone</label>
-                <input id="tel" type="tel">
-                <label for="question">O que você deseja?</label>
-                <select id="question" name="select">
-                  <option value="Orçamento">Orçamento</option>
-                  <option value="Dúvida">Dúvida</option>
-                  <option value="Reclamação">Reclamação</option>
-                  <option value="Financeiro">Assuntos Financeiros</option>
-                </select>
-                <label for="message">Mensagem</label>
-                <textarea id="message" name="textarea" placeholder="Digite sua mensagem" maxlength="500"></textarea>
-                <button name="botao">Enviar</button>
+                <dl>
+                  <dt>
+                    <label for="name">Nome *</label>
+                  </dt>
+                  <dd>
+                    <input id="name" type="text">
+                  </dd>
+                  <dt>
+                    <label for="email">E-mail *</label>
+                  </dt>
+                  <dd>
+                    <input id="email" type="text">
+                  </dd>
+                  <dt>
+                    <label for="tel">Telefone</label>
+                  </dt>
+                  <dd>
+                    <input id="tel" type="text">
+                  </dd>
+                  <dt>
+                    <label for="question">O que você deseja?</label>
+                  </dt>
+                  <dd>
+                    <select id="question" name="select">
+                      <option value="Orçamento">Orçamento</option>
+                      <option value="Dúvida">Dúvida</option>
+                      <option value="Reclamação">Reclamação</option>
+                      <option value="Financeiro">Assuntos Financeiros</option>
+                    </select>
+                  </dd>
+                  <dt>
+                    <label for="message">Mensagem</label>
+                  </dt>
+                  <dd>
+                    <textarea id="message" name="textarea" placeholder="Digite sua mensagem" maxlength="500"></textarea>
+                  </dd>
+                </dl>
               </fieldset>
+              <button name="botao">Enviar</button>
             </form>
+          </div>
+          <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.864902499728!2d-46.84299838502339!3d-23.50137508471267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf021eb8ca5113%3A0x951f830123ad2e0f!2sAlameda+Araguaia%2C+2190+-+Alphaville+Industrial%2C+Barueri+-+SP!5e0!3m2!1spt-BR!2sbr!4v1476711153904" width="400" height="300" style="border:0" allowfullscreen></iframe>
             <address>
-              <h3>StartUp-Me Desenvolvimento de Software</h3>
+              <h4>StartUp-Me Desenvolvimento de Software</h4>
               Av. Paulista, 1374 - Bela Vista, São Paulo - SP<br>
               Conj 01 Sala 107 - CEP: 01311-300<br>
               <strong>E-mail: </strong>contato@startupme.com.br<br>
@@ -156,9 +184,7 @@
             </address>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
+      </div>
       <div class="container">
         <a href="#logo" class="logo">StartUp-Me</a>
         <small>&copy;2016 StartUp-Me</small>

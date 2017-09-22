@@ -124,6 +124,10 @@ figcaption {
   font-size: 16px;
 }
 
+label {
+  display: block;
+}
+
 .container {
   position: relative;
   width: 80%;
@@ -133,12 +137,19 @@ figcaption {
   font-size: 20px;
 }
 
+iframe:after,
+fieldset:after,
+dl:after,
+form:after,
+footer div:after,
 .container:after,
 .segmentos:after,
 .boas-vindas:after,
 .equipe:after,
 .recursos:after,
-.plataformas:after {
+.plataformas:after
+.fale-conosco:after,
+.fale-conosco .container-flex div:after {
   content: '';
   display: table;
   clear: both;
@@ -172,9 +183,7 @@ figcaption {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
-  justify-content: space-around;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 .segmentos {
@@ -182,10 +191,14 @@ figcaption {
   margin-bottom: 40px;
 }
 
+.container-flex .segmentos {
+  justify-content: center;
+}
+
 .segmentos figure {
-  flex-grow: 1;
   width: 140px;
   height: 140px;
+  flex-grow: 1;
 }
 
 .segmentos img,
@@ -208,10 +221,6 @@ figcaption {
 
   -webkit-transform: scale(1.1) rotateY(180deg);
   transform: scale(1.1) rotateY(180deg);
-}
-
-.segmentos figure + figure {
-  margin-left: 20px;
 }
 
 .segmentos ~ p + p {
@@ -247,8 +256,8 @@ figcaption {
 .equipe figure,
 .equipe img,
 .equipe figcaption {
-  -webkit-transition: all ease-out 400ms;
-  transition: all ease-out 400ms;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
 }
 
 .equipe img {
@@ -344,3 +353,54 @@ figcaption {
 .lista-icones li:nth-child(2) a { background-image: url(../images/icon-android.png); }
 .lista-icones li:nth-child(3) a { background-image: url(../images/icon-windows-phone.png); }
 .lista-icones li:nth-child(4) a { background-image: url(../images/icon-firefox-os.png); }
+
+.fale-conosco {
+  position: relative;
+  padding: 20px 0 40px;
+  background-image: url(../images/bg-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  color: #fff;
+}
+
+.fale-conosco .container-flex div {
+  flex: 1;
+}
+
+input[type=text],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #777;
+}
+
+
+fieldset {
+  text-align: left;
+}
+
+.fale-conosco fieldset legend {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+dt {
+  padding-bottom: 10px;
+}
+
+dd + dt {
+  margin-top: 20px;
+}
+
+.fale-conosco fieldset + button {
+  margin-top: 20px;
+  padding: 7px 40px;
+}
+
+form button {
+  float: right;
+}
