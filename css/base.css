@@ -86,10 +86,11 @@ nav a:hover {
 
 main section:nth-child(even) {
   background: -webkit-linear-gradient(360deg, rgba(83, 107, 119, 0.41), #f5f5f5, rgba(129, 197, 230, 0.22));
-  background: linear-gradient(360deg, rgba(83, 107, 119, 0.41), #f5f5f5, rgba(129, 197, 230, 0.22));
+  background: linear-gradient(360deg, rgba(83, 107, 119, 0.22), #f5f5f5, rgba(129, 197, 230, 0.22));
 }
 
-main section {
+main section,
+footer {
   padding: 40px 0;
 }
 
@@ -367,10 +368,16 @@ dd + dt {
   position: relative;
   padding: 20px 0 40px;
   background-color: #282537;
-  background-image: -webkit-radial-gradient(top, circle cover, #009688 0%, #00557b 80%);
-  background-image: -moz-radial-gradient(top, circle cover, #009688 0%, #00557b 80%);
-  background-image: -o-radial-gradient(top, circle cover, #009688 0%, #00557b 80%);
-  background-image: radial-gradient(top, circle cover, #009688 0%, #00557b 80%);
+  background-image:
+    linear-gradient(
+      130deg,
+    rgba(99, 133, 150, 0.22) 0%,
+    rgba(50, 150, 199, 0.4) 25%,
+    rgba(83, 107, 119, 0.22) 50%,
+    rgba(90, 139, 160, 0.78) 75%, 
+    rgba(83, 107, 119, 0.22) 95%
+  );
+  background-size: cover;
   color: #fff;
 }
 
@@ -383,11 +390,6 @@ dd + dt {
   margin-right: 100px;
 }
 
-.endereco {
-  width: 380px;
-  margin-top: 95px;
-}
-
 .fale-conosco fieldset legend {
   margin-bottom: 40px;
   font-size: 14px;
@@ -396,4 +398,33 @@ dd + dt {
 .fale-conosco fieldset + button {
   margin-top: 20px;
   padding: 7px 40px;
+}
+
+.endereco {
+  width: 380px;
+  margin-top: 95px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.endereco h4 {
+  color: #fed136;
+  font-weight: bold;
+}
+
+.endereco strong {
+  display: inline-block;
+  color: #fed136;
+}
+
+.endereco iframe {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, .4);
+}
+
+.endereco h4,
+.endereco strong,
+.endereco address {
+  margin-bottom: 10px;
 }
