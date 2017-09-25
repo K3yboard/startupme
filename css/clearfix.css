@@ -1,0 +1,11 @@
+.container:after,
+.segmentos:after,
+.boas-vindas:after,
+.equipe:after,
+.recursos:after,
+.plataformas:after,
+.fale-conosco:after {
+  clear: both;
+  display: table;
+  content: '';
+}
