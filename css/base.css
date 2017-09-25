@@ -36,9 +36,7 @@ button:active {
   transform: scale(0.95);
 }
 
-h1 {
-  text-indent: -9999px;
-  overflow: hidden;
+header h1 {
   float: left;
 }
 
@@ -326,18 +324,18 @@ dd + dt {
   margin: 20px auto;
 }
 
-.lista-icones {
+.plataformas .lista-icones {
   margin-top: 40px;
 }
 
-.lista-icones li {
+.plataformas .lista-icones li {
   flex: 1;
   justify-content: space-around;
   text-align: center;
   margin: 5px 10px;
 }
 
-.lista-icones li a {
+.plataformas .lista-icones li a {
   display: inline-block;
   height: 70px;
   width: 70px;
@@ -351,7 +349,7 @@ dd + dt {
   transition: all ease 300ms;
 }
 
-.lista-icones li:hover a {
+.plataformas .lista-icones li:hover a {
   -webkit-transform: rotateY(180deg) scale(1.4);
   -webkit-filter: invert(100%);
 
@@ -427,4 +425,51 @@ dd + dt {
 .endereco strong,
 .endereco address {
   margin-bottom: 10px;
+}
+
+.links-rodape strong {
+  float: left;
+  clear: left;
+  font-size: 14px;
+}
+
+.links-rodape ul {
+  float: right;
+}
+
+.links-rodape li {
+  display: inline-block;
+}
+
+.links-rodape li + li {
+  margin-left: 30px;
+}
+
+.links-rodape li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  overflow: hidden;
+
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+
+
+.links-rodape li a:before {
+  display: block;
+  font-size: 30px;
+  text-indent: 0px;
+  color: #777777;
+}
+
+.links-rodape li:hover a:before {
+  color: #fed136;
+}
+
+.hidden {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
 }

@@ -13,9 +13,9 @@
   <body>
     <header>
       <div class="container">
-        <h1>
+        <h1 class="hidden">
           StartUp-Me
-          <a href="#">
+          <a id="home" href="#">
             <img src="./images/startup-me_logo.png" alt="StartUp Me" width="180px">
           </a>
         </h1>
@@ -186,14 +186,17 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <a href="#logo" class="logo">StartUp-Me</a>
-        <small>&copy;2016 StartUp-Me</small>
+      <div class="container links-rodape" id="links">
+        <a href="#logo" class="hidden">
+          StartUp-Me
+          <img src="./images/startup-me_logo.png" alt="StartUp Me" width="140px">
+        </a>
+        <strong>&copy;2016 StartUp-Me</strong>
         <ul>
-          <li><a class="icon-facebook" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-          <li><a class="icon-twitter" href="https://twitter.com/" target="_blank">Twitter</a></li>
-          <li><a class="icon-github" href="https://github.com/" target="_blank">GitHub</a></li>
-          <li><a class="icon-linkedin" href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+          <li><a class="icon-facebook" href="#links">Facebook</a></li>
+          <li><a class="icon-twitter" href="#links">Twitter</a></li>
+          <li><a class="icon-github" href="#links">GitHub</a></li>
+          <li><a class="icon-linkedin" href="#links">LinkedIn</a></li>
         </ul>
       </div>
     </footer>
