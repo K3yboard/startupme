@@ -41,14 +41,14 @@ header h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #fed136;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #000;
 }
@@ -99,7 +99,7 @@ h2 + button {
 h2 + p {
   margin-top: 30px;
   margin-bottom: 40px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 h3 {
@@ -120,7 +120,7 @@ figure img {
 
 figcaption {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 label {
@@ -160,7 +160,7 @@ dd + dt {
   max-width: 940px;
   margin: 0 auto;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .boas-vindas {
@@ -169,13 +169,13 @@ dd + dt {
 }
 
 .boas-vindas h2 {
-  font-size: 65px;
+  font-size: 3rem;
   color: #fff;
 }
 
 .boas-vindas span {
   display: block;
-  font-size: 30px;
+  font-size: 1.9rem;
   font-style: italic;
   text-transform: none;
 }
@@ -237,7 +237,7 @@ dd + dt {
 
 .segmentos ~ button {
   padding: 10px 30px;
-  font-size: 14px;
+  font-size: .9rem;
 }
 
 .equipe {
@@ -390,7 +390,7 @@ dd + dt {
 
 .fale-conosco fieldset legend {
   margin-bottom: 40px;
-  font-size: 14px;
+  font-size: .9rem;
 }
 
 .fale-conosco fieldset + button {
@@ -401,7 +401,7 @@ dd + dt {
 .endereco {
   width: 380px;
   margin-top: 95px;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -430,7 +430,7 @@ dd + dt {
 .links-rodape strong {
   float: left;
   clear: left;
-  font-size: 14px;
+  font-size: .9rem;
 }
 
 .links-rodape ul {
@@ -459,7 +459,7 @@ dd + dt {
 
 .links-rodape li a:before {
   display: block;
-  font-size: 30px;
+  font-size: 1.9rem;
   text-indent: 0px;
   color: #777777;
 }
