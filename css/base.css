@@ -308,16 +308,6 @@ dd + dt {
   transform: translateY(20%);
 }
 
-.recursos {
-  float: left;
-  max-width: 550px;
-}
-
-.plataformas {
-  float: right;
-  max-width: 500px;
-}
-
 .recursos,
 .plataformas {
   text-align: left;
@@ -536,5 +526,15 @@ dd + dt {
     position: absolute;
     top: 30px;
     right: 0;
+  }
+
+  .recursos {
+    float: left;
+    max-width: 470px;
+  }
+
+  .plataformas {
+    float: right;
+    max-width: 460px;
   }
 }
