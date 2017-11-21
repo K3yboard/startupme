@@ -4,7 +4,8 @@
 .equipe:after,
 .recursos:after,
 .plataformas:after,
-.fale-conosco:after {
+.fale-conosco:after,
+header:after {
   clear: both;
   display: table;
   content: '';
