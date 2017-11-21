@@ -1,0 +1,24 @@
+{
+  "name": "startupme",
+  "version": "1.0.0",
+  "description": "O StartUp-Me é um projeto acadêmico que visa o aprendizado de HTML, CSS e um pouquinho de Javascript.  \r Com a metodologia de \"Aprendizado baseado em projeto\".",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K3yboard/startupme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K3yboard/startupme/issues"
+  },
+  "homepage": "https://github.com/K3yboard/startupme#readme"
+}
