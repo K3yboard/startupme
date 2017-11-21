@@ -172,7 +172,7 @@ dd + dt {
 }
 
 .boas-vindas h2 {
-  font-size: 2.6rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -314,7 +314,6 @@ dd + dt {
 .plataformas {
   float: right;
   max-width: 500px;
-  margin-top: 70px;
 }
 
 .recursos,
@@ -388,7 +387,8 @@ dd + dt {
 }
 
 .formulario-padrao {
-  width: 460px;
+  position: relative;
+  width: 100%;
   margin-right: 100px;
 }
 
@@ -403,7 +403,8 @@ dd + dt {
 }
 
 .endereco {
-  width: 380px;
+  position: relative;
+  width: 100%;
   margin-top: 95px;
   font-size: 1rem;
   text-align: left;
@@ -420,6 +421,8 @@ dd + dt {
 }
 
 .endereco iframe {
+  display: block;
+  width: 100%;
   margin-bottom: 20px;
   border-radius: 4px;
   box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, .4);
@@ -432,13 +435,9 @@ dd + dt {
 }
 
 .links-rodape strong {
-  float: left;
-  clear: left;
+  display: block;
+  margin: 0 auto 20px;
   font-size: .9rem;
-}
-
-.links-rodape ul {
-  float: right;
 }
 
 .links-rodape li {
@@ -447,6 +446,10 @@ dd + dt {
 
 .links-rodape li + li {
   margin-left: 30px;
+}
+
+.links-rodape img {
+  margin: 0 auto;
 }
 
 .links-rodape li a {
