@@ -42,8 +42,9 @@ button:active {
   transform: scale(0.95);
 }
 
-header h1 {
-  float: left;
+h1 img {
+  margin: 0 auto;
+  width: 200px;
 }
 
 h2 {
@@ -94,8 +95,11 @@ main section:nth-child(even) {
   background: linear-gradient(360deg, rgba(83, 107, 119, 0.22), #f5f5f5, rgba(129, 197, 230, 0.22));
 }
 
-main section,
 footer {
+  padding: 40px 0 0;
+}
+
+main section {
   padding: 40px 0;
 }
 
@@ -169,10 +173,11 @@ dd + dt {
 .boas-vindas {
   clear: both;
   padding-top: 20px;
+  margin: 20px auto;
 }
 
 .boas-vindas h2 {
-  font-size: 2.6rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -306,17 +311,6 @@ dd + dt {
   transform: translateY(20%);
 }
 
-.recursos {
-  float: left;
-  max-width: 550px;
-}
-
-.plataformas {
-  float: right;
-  max-width: 500px;
-  margin-top: 70px;
-}
-
 .recursos,
 .plataformas {
   text-align: left;
@@ -388,8 +382,8 @@ dd + dt {
 }
 
 .formulario-padrao {
-  width: 460px;
-  margin-right: 100px;
+  position: relative;
+  width: 100%;
 }
 
 .fale-conosco fieldset legend {
@@ -403,7 +397,8 @@ dd + dt {
 }
 
 .endereco {
-  width: 380px;
+  position: relative;
+  width: 100%;
   margin-top: 95px;
   font-size: 1rem;
   text-align: left;
@@ -420,6 +415,8 @@ dd + dt {
 }
 
 .endereco iframe {
+  display: block;
+  width: 100%;
   margin-bottom: 20px;
   border-radius: 4px;
   box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, .4);
@@ -431,14 +428,14 @@ dd + dt {
   margin-bottom: 10px;
 }
 
-.links-rodape strong {
-  float: left;
-  clear: left;
-  font-size: .9rem;
+.links-rodape {
+  padding-bottom: 20px;
 }
 
-.links-rodape ul {
-  float: right;
+.links-rodape strong {
+  display: block;
+  margin: 0 auto 20px;
+  font-size: .9rem;
 }
 
 .links-rodape li {
@@ -447,6 +444,10 @@ dd + dt {
 
 .links-rodape li + li {
   margin-left: 30px;
+}
+
+.links-rodape img {
+  margin: 0 auto;
 }
 
 .links-rodape li a {
@@ -476,4 +477,71 @@ dd + dt {
   display: block;
   text-indent: -9999px;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 620px) {
+  h1 {
+    float: left;
+  }
+
+  nav {
+    clear: none;
+    float: right;
+  }
+
+  nav ul {
+    padding-top: 15px;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  header li + li {
+    margin-left: 20px;
+  }
+
+  .boas-vindas {
+    padding-top: 70px;
+    margin: 20px auto 70px;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+  .boas-vindas h2 {
+    font-size: 2.5rem;
+  }
+
+  .formulario-padrao,
+  .endereco {
+    width: 45%;
+  }
+
+  .formulario-padrao + .endereco {
+    margin-left: 5%;
+  }
+
+  .links-rodape {
+    text-align: left;
+  }
+
+  .links-rodape img {
+    margin: 0;
+  }
+
+  .links-rodape ul {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+
+  .recursos {
+    float: left;
+    max-width: 470px;
+  }
+
+  .plataformas {
+    float: right;
+    max-width: 460px;
+  }
 }
