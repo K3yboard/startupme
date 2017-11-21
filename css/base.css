@@ -95,8 +95,11 @@ main section:nth-child(even) {
   background: linear-gradient(360deg, rgba(83, 107, 119, 0.22), #f5f5f5, rgba(129, 197, 230, 0.22));
 }
 
-main section,
 footer {
+  padding: 40px 0 0;
+}
+
+main section {
   padding: 40px 0;
 }
 
@@ -423,6 +426,10 @@ dd + dt {
 .endereco strong,
 .endereco address {
   margin-bottom: 10px;
+}
+
+.links-rodape {
+  padding-bottom: 20px;
 }
 
 .links-rodape strong {
